@@ -1,5 +1,15 @@
 @font-face {
     font-family: 'Gilroy';
+    src: local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
     src: local('Gilroy-SemiBold'),
         url('../fonts//Gilroy-SemiBold.woff2') format('woff2'),
         url('../fonts/Gilroy-SemiBold.woff') format('woff');
@@ -17,3 +27,4 @@
     font-style: normal;
     font-display: swap;
 }
+
