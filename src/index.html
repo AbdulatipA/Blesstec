@@ -8,24 +8,53 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="section-header">
+    <div class="submenu">
         <div class="container">
-            <div class="submenu">
-                <ul class="submenu__list">
-                    <li class="submenu__item">
-                        <a href="#">О нас</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="#">Сотрудничество</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-                <a href="tel:+7490905011">+7 (495) 090-50-11</a>
+            <ul class="submenu__list">
+                <li class="submenu__item">
+                    <a href="#" class="title title_fz12 submenu__link">О нас</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="#" class="title title_fz12 submenu__link">Сотрудничество</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="#" class="title title_fz12 submenu__link">Контакты</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="tel:+7490905011" class="title title_fz12 submenu__link submenu__tell">+7 (495) 090-50-11</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__mainmenu">
+                    <div class="header__logo__wrap">
+                        <img class="header__logo" src="icons/logo/logo.svg" alt="logo">
+                    </div>
+                    <button class="btn hamburger header__btn">
+                        <svg class="hamburger-icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.842786 2.06083C0.842786 1.34968 1.41995 0.772521 2.13109 0.772521L13.9148 0.772522C14.626 0.772522 15.2031 1.34968 15.2031 2.06083C15.2031 2.77198 14.626 3.34914 13.9148 3.34914L2.13109 3.34914C1.41995 3.34914 0.842786 2.77198 0.842786 2.06083Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.84308 10.0775C0.84308 9.36638 1.42024 8.78921 2.13139 8.78921L19.5545 8.78922C20.2656 8.78922 20.8428 9.36638 20.8428 10.0775C20.8428 10.7887 20.2656 11.3658 19.5545 11.3658L2.13139 11.3658C1.42024 11.3658 0.84308 10.7887 0.84308 10.0775Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.844274 17.9609C0.844274 17.2498 1.42144 16.6726 2.13258 16.6726L7.68777 16.6726C8.39891 16.6726 8.97607 17.2498 8.97607 17.9609C8.97607 18.6721 8.39891 19.2492 7.68777 19.2492L2.13258 19.2492C1.42144 19.2492 0.844274 18.6721 0.844274 17.9609Z" fill="white"/>
+                        </svg>
+                        Каталог
+                    </button>
+                    <div class="header__wrapper_form">
+                        <form action="#" class="header__form">
+                            <input type="text" name="search" id="searc" class="header__input">
+                            <button class="btn">
+                                <svg class=" search__btn" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4243 2.24212C7.77633 2.24212 2.36785 7.7658 2.36785 14.5572C2.36785 21.3485 7.77633 26.8737 14.4243 26.8737C21.0707 26.8737 26.4792 21.3485 26.4792 14.5572C26.4792 7.7658 21.0707 2.24212 14.4243 2.24212ZM14.4243 29.1161C6.56616 29.1161 0.172852 22.5848 0.172852 14.5572C0.172852 6.52951 6.56616 -0.000244141 14.4243 -0.000244141C22.2824 -0.000244141 28.6742 6.52951 28.6742 14.5572C28.6742 22.5848 22.2824 29.1161 14.4243 29.1161Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.729 30.9768C28.4495 30.9768 28.1686 30.8677 27.9535 30.6494L22.7967 25.3963C22.3679 24.9583 22.3665 24.2482 22.7952 23.8102C23.2225 23.3692 23.9176 23.3722 24.3478 23.8072L29.5046 29.0618C29.9334 29.4998 29.9348 30.2084 29.5061 30.6464C29.2924 30.8677 29.01 30.9768 28.729 30.9768Z" fill="white"/>
+                                    </svg>        
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-   
 </body>
 </html>
