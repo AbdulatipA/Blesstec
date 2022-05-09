@@ -1,0 +1,50 @@
+.promo {
+    margin-top: 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapp {
+        width: 760px;
+        height: 300px;
+        border-radius: 15px;
+        color: $colorwhite;
+        font-weight: 600;
+        padding: 35px 30px;
+    }  
+    &__wrapp_big {
+        background: url(../img/promo/mainPromoBg.png) center (center/cover) no-repeat ;
+    }
+    &__wrapp__title {
+        line-height: 30px;
+        width: 245px;
+        span {
+            color: #6B6B6B;
+        }
+    }
+    &__wrapp_min {
+        padding: 30px 0 0 30px;
+        width: 360px;
+        color: #000;
+        background: url(../img/promo/mainProduct.png) left (center/cover) no-repeat $colorwhite;
+        background-position-y: 56px;
+        background-position-x: 27px;
+    }
+    &__wrapp__descr {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    &__wrapp__link {
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        top: 12px;
+        left: auto;
+        margin-left: 10px;
+    }
+}

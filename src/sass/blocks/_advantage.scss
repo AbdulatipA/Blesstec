@@ -1,0 +1,25 @@
+.advantage {
+    margin-top: 50px;
+    &__wrapp {
+        display: grid;
+        width: 1080px;
+        grid-template-rows: minmax(175px, auto);
+        grid-template-columns: repeat(4, minmax(250px, auto));
+        grid-auto-rows: 175px;
+        gap: 20px;
+    }  
+    &__item {
+        background-color: $colorwhite;
+        border-radius: 15px;
+        padding: 19px 22px 20px 19px;
+        font-weight: 600;
+        line-height: 19px;
+        .hex3F6EB8 {color: #3F6EB8; display: block};
+        .hexFF0053 {color: #FF0053; display: block};
+        .hex20A92D {color: #20A92D; display: block};
+        .hex007AFF {color: #007AFF; display: block};
+    }
+    &__text {
+        margin-top: 15px;
+    }
+}

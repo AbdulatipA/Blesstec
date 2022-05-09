@@ -14,6 +14,7 @@
 body {
     font-family: 'Gilroy', sans-serif;
     font-weight: 400;
+    background-color: $mainbg;
 }
 
 ul, li {
@@ -24,9 +25,13 @@ ul, li {
 .container {
     width: 1160px;
     margin: 0 auto;
+    // border: 1px solid red
 }
 
 @import 'blocks/title';
 @import 'blocks/btn';
 @import 'blocks/submenu';
 @import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/advantage';
+@import 'blocks/media';
