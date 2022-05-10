@@ -106,7 +106,6 @@
     }
     .advantage {
         &__wrapp {
-            // grid-template-rows: repeat(2, minmax(50%,auto));
             grid-template-columns: repeat(2,minmax(50px,auto));
         }
     }

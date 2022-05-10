@@ -1,0 +1,111 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        z-index: 2;
+        width: 1200px;
+        min-height: 600px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 53px 79px 31px 79px;
+        nav {
+            width: 500px;
+            margin-top: 30px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        font-weight: 600;
+    }
+    &__item {
+        position: relative;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            height: 0.5px;
+            width: 100%;
+            background-color: #D1D1D1;
+        }
+    }
+    &__link {
+        padding-left: 45px;
+        color: #000;
+        position: relative;
+    }
+    &__title {
+        font-weight: 900;
+    }
+    &__arrow {
+        cursor: pointer;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &_home {background: url('../icons/menu/home.svg') center center/contain no-repeat;}
+        &_phone {background: url('../icons/menu/phone.svg') center center/contain no-repeat;}
+        &_laptop {background: url('../icons/menu/laptop.svg') center center/contain no-repeat;}
+        &_tablet {background: url('../icons/menu/tablet.svg') center center/contain no-repeat;}
+        &_store {background: url('../icons/menu/store.svg') center center/contain no-repeat;}
+
+        //contacts
+        &_user {background: url('../icons/menu/user.svg') center center/contain no-repeat;}
+        &_cooperation {background: url('../icons/menu/cooperation.svg') center center/contain no-repeat;}
+        &_contacts {background: url('../icons/menu/contacts.svg') center center/contain no-repeat;}
+        &_delivery {background: url('../icons/menu/delivery.svg') center center/contain no-repeat;}
+        &_aboutUs {background: url('../icons/menu/aboutUs.svg') center center/contain no-repeat;}
+    }
+    
+
+    &__contacts {
+        margin-top: 56px;
+    }
+    &__item_contacts {
+        margin-top: 15px;
+        &:not(:last-child)::after {
+            content: '';
+            display: none;
+        }
+    }
+
+
+
+    &__close {
+        position: absolute;
+        top: 55px;
+        right: 79px;
+        cursor: pointer;
+    }
+
+    &__overlay {
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        background-color: #DDDDDD;
+    }
+}
